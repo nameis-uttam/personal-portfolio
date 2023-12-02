@@ -12,10 +12,10 @@ Step 2: Personal Overview
 ⇒ Your professional goals and aspirations.
 
 Step 3: Skills and Expertise
-Skills Section: Display your skills using a combination of text, icons, or graphs. Categorize them based on your proficiency level (e.g., Beginner, Intermediate, Expert).
+❁Skills Section: Display your skills using a combination of text, icons, or graphs. Categorize them based on your proficiency level (e.g., Beginner, Intermediate, Expert).
 
 Step 4: Work Experience and Projects
-Experience Section: Highlight your relevant work experience. Include:
+❁Experience Section: Highlight your relevant work experience. Include:
 ⇒ Job titles, companies, and dates.
 ⇒ Key responsibilities and achievements.
 ⇒ Impactful projects you've worked on.
