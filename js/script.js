@@ -81,6 +81,8 @@ function sendEmail() {
         title: "Success!",
         text: "Message sent successfully!",
         icon: "success",
+      }).then(() => {
+        document.getElementById("myForm").reset(); // Reset the form after success
       });
     }
   });
@@ -154,7 +156,7 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 document.addEventListener("keydown", function (e) {
-  if (/*e.key === "F12" ||*/ e.ctrlKey && e.key === "u") {
+  if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
     e.preventDefault();
   }
 });

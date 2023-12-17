@@ -257,31 +257,32 @@
     <!-- Contact sectioin design -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i: 1"></span></h2>
-      <form action="#">
+      <form action="#" id="myForm">
         <div class="input-box">
           <div class="input-field field">
-            <input type="text" class="item" id="fullName" placeholder="Full Name"  autocomplete="off"/>
+            <input type="text" class="item" id="fullName" placeholder="Full Name" required oninvalid="this.setCustomValidity(this.value.trim() === '' ? 'Full Name is required' : 'Enter alphabetic characters only')" 
+            oninput="this.setCustomValidity('')" title="Enter full name" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s]+$" autocomplete="off"/>
             <span class="focus"></span>
-            <div class="error-txt">Full Name can't be blank</div>
           </div>
           <div class="input-field field">
-            <input type="text" id="emailId" placeholder="Email Id" class="item"  autocomplete="off"/>
+            <input type="email" id="emailId" placeholder="Email Id" class="item" required oninvalid="this.setCustomValidity(this.value.trim() === '' ? 'Email address can\'t be blank' : 'Invalid Email')"
+            oninput="this.setCustomValidity('')" title="Enter email address" autocomplete="off"/>
             <span class="focus"></span>
-            <div class="error-txt email">Email address can't be blank</div>
+            <!-- <div class="email" style="display: none;">Invalid Email</div> -->
           </div>
           <span class="animate scroll" style="--i: 3"></span>
         </div>
 
         <div class="input-box">
           <div class="input-field field">
-            <input type="text" id="mobile" placeholder="Mobile Number" class="item"  autocomplete="off" />
+            <input type="text" id="mobile" placeholder="Mobile Number" class="item" required oninvalid="this.setCustomValidity(this.value.trim() === '' ? 'Mobile Number is required' : 'Invalid Mobile Number')" oninput="this.setCustomValidity('')" pattern="[0-9]{10}" title="Enter a 10-digit mobile number" autocomplete="off" />
             <span class="focus"></span>
-            <div class="error-txt">Mobile Number can't be blank</div>
+            <!-- <div class="error-txt">Mobile Number can't be blank</div> -->
           </div>
           <div class="input-field field">
-            <input type="text" id="subject" placeholder="Email Subject"class="item"  autocomplete="off" />
+            <input type="text" id="subject" placeholder="Email Subject"class="item" required oninvalid="this.setCustomValidity(`Subject is required`)" oninput="this.setCustomValidity('')" title="Enter subject" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s]+$" autocomplete="off" />
             <span class="focus"></span>
-            <div class="error-txt">Subject can't be blank</div>
+            <!-- <div class="error-txt">Subject can't be blank</div> -->
           </div>
           <span class="animate scroll" style="--i: 5"></span>
         </div>
@@ -292,11 +293,14 @@
             cols="30"
             rows="10"
             placeholder="Your Massage"
-            class="item"  autocomplete="off"
+            class="item" 
+            required minlength="3"
+            oninvalid="this.setCustomValidity(this.value.trim() === '' ? 'Message is required' : 'Enter at least three alphabetic characters')" oninput="this.setCustomValidity('')"
+            title="Type your message" autocomplete="off"
           ></textarea>
           <span class="focus"></span>
           <span class="animate scroll" style="--i: 7"></span>
-          <div class="error-txt">Message can't be blank</div>
+          <!-- <div class="error-txt">Message can't be blank</div> -->
         </div>
         <div class="btn-box btns">
           <button type="submit" class="btn">Submit</button>
