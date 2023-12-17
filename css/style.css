@@ -110,6 +110,10 @@ section {
   padding: 10rem 9% 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;

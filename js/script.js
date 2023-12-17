@@ -57,6 +57,22 @@ window.onscroll = () => {
   });
 };
 
+//Additional content expands or collapses when clicking the "Read More"
+document.addEventListener("DOMContentLoaded", function () {
+  const readMoreButton = document.querySelector(".read-more");
+  const longDescription = document.querySelector(".long-description");
+
+  readMoreButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    longDescription.classList.toggle("hidden");
+    if (longDescription.classList.contains("hidden")) {
+      readMoreButton.textContent = "Read More";
+    } else {
+      readMoreButton.textContent = "Read Less";
+    }
+  });
+});
+
 //Send message to email
 const form = document.querySelector("form");
 const fullName = document.getElementById("fullName");
