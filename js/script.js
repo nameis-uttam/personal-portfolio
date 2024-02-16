@@ -171,8 +171,8 @@ form.addEventListener("submit", (e) => {
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
-document.addEventListener("keydown", function (e) {
-  if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
-    e.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
+//     e.preventDefault();
+//   }
+// });
