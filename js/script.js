@@ -184,3 +184,7 @@ document.addEventListener("keydown", function (e) {
     e.preventDefault();
   }
 });
+   if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
+     e.preventDefault();
+   }
+ });
