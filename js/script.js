@@ -1,5 +1,15 @@
 /** @format */
 
+//preloader
+const fadeOut = () => {
+  setTimeout(() => {
+    const loader = document.querySelector("#preloader");
+    loader.style.opacity = 0;
+  });
+};
+
+window.addEventListener("load", fadeOut);
+
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -172,6 +182,10 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 document.addEventListener("keydown", function (e) {
+  if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
+    e.preventDefault();
+  }
+});
    if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
      e.preventDefault();
    }
