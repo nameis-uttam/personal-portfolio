@@ -2,10 +2,8 @@
 
 //preloader
 const fadeOut = () => {
-  setTimeout(() => {
-    const loader = document.querySelector("#preloader");
-    loader.style.opacity = 0;
-  });
+  const loader = document.querySelector("#preloader");
+  loader.style.opacity = 0;
 };
 
 window.addEventListener("load", fadeOut);
