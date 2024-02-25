@@ -1,3 +1,15 @@
+/** @format */
+
+//preloader
+const removePreloader = () => {
+  const preloader = document.querySelector(".preloader");
+  preloader.style.opacity = 0;
+  setTimeout(() => {
+    preloader.remove();
+  }, 1500);
+};
+window.addEventListener("load", removePreloader);
+
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
