@@ -1,12 +1,14 @@
 /** @format */
 
 //preloader
-const fadeOut = () => {
-  const loader = document.querySelector("#preloader");
-  loader.style.opacity = 0;
+const removePreloader = () => {
+  const preloader = document.querySelector(".preloader");
+  preloader.style.opacity = 0;
+  setTimeout(() => {
+    preloader.remove();
+  }, 1500);
 };
-
-window.addEventListener("load", fadeOut);
+window.addEventListener("load", removePreloader);
 
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
@@ -184,6 +186,3 @@ document.addEventListener("keydown", function (e) {
     e.preventDefault();
   }
 });
-if (e.key === "F12" || (e.ctrlKey && e.key === "u")) {
-  e.preventDefault();
-}
