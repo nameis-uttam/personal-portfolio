@@ -1,11 +1,10 @@
 /** @format */
 
 //preloader
-const fadeOut = () => {
-  const loader = document.querySelector("#preloader");
-  loader.style.opacity = 0;
-};
-
+setTimeout(() => {
+    const loader = document.querySelector("#preloader");
+    loader.style.opacity = 0;
+  },2000);
 window.addEventListener("load", fadeOut);
 
 // toggle icon navbar
