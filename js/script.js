@@ -1,12 +1,3 @@
-/** @format */
-
-//preloader
-setTimeout(() => {
-    const loader = document.querySelector("#preloader");
-    loader.style.opacity = 0;
-  },2000);
-window.addEventListener("load", fadeOut);
-
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
